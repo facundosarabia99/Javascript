@@ -1,0 +1,47 @@
+/*import { sumar, restar, dividir, multiplicar } from "./opercacionesMat.js";*/
+
+function dividir(x,y){
+    return x/y
+}
+
+alert("Esta pagina web es solo para mayores de 18");
+
+let Nombre = prompt("Bienvenido a mi programa, dinos tu nombre");
+
+
+let num = prompt(`Hola ${Nombre}, cual es tu edad?`);
+
+function validar(){
+    while (isNaN(num) || num == null || num.trim() == ""){
+        num = prompt("Por favor solo acepto numeros");
+    }
+    while(num < 18)
+    {
+        num = prompt(`Lo siento, accseso denegado para ${Nombre}, debes ser mayor de edad`)
+    }
+    return num;
+}
+
+let edad = validar();
+
+alert("Bienvenido a nuesto sitio "+ Nombre);
+
+
+
+let numm = prompt(`Que cantidad de dinero deseas invertir ${Nombre}?`);
+
+function validar2(){
+    while (isNaN(numm) || numm == null || numm.trim() == ""){
+        numm = prompt("Por favor solo acepto numeros");
+    }
+    return numm;
+}
+
+let Inversion = validar2();
+
+let Numcuotas = prompt(`En que cantidad de cuotas deseas invertir el dinero ${Nombre}?`);
+
+let Cuota = (dividir(Inversion,Numcuotas));
+
+alert(`El costo de tu cuota sera de $${Cuota}, estas bien con eso ${Nombre}?`)
+
