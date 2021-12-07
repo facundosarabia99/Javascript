@@ -1,5 +1,3 @@
-/*import { sumar, restar, dividir, multiplicar } from "./opercacionesMat.js";*/
-
 function dividir(x,y){
     return x/y
 }
@@ -45,3 +43,25 @@ let Cuota = (dividir(Inversion,Numcuotas));
 
 alert(`El costo de tu cuota sera de $${Cuota}, estas bien con eso ${Nombre}?`)
 
+class Cliente{
+    constructor(Nombre,Edad,Ocupacion,Inversion) {
+        this.Nombre=Nombre,
+        this.Edad=Edad,
+        this.Ocupacion= Ocupacion,
+        this.Inversion=Inversion;
+
+    }
+    sumaIva(){
+        this.Inversion = this.Inversion * 1.21;
+    }
+
+    habla(){
+        console.log(`${this.Nombre} invierte en Shellman Wealth `)
+    }
+}
+
+const Facundo = new Cliente ("Facundo",22,"Estudiante",10);
+console.log(Facundo)
+console.log("Inversion" in Facundo)
+
+Facundo.habla();

@@ -1,0 +1,10 @@
+$bglight: rgb(255, 218, 169);
+$bgwhite: rgb(255, 255, 255);
+
+main{
+    width: 100%;
+    background-color: $bgwhite;
+    img{
+        width: 10rem;
+    }
+}
