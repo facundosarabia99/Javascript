@@ -1,4 +1,4 @@
-/*function dividir(x,y){
+function dividir(x,y){
     return x/y
 }
 
@@ -65,7 +65,7 @@ console.log(Facundo)
 console.log("Inversion" in Facundo)
 
 Facundo.habla();
-*/
+
 
 
 let NOmbre = ["Valeria","Vanina","Cristian","Eduardo"]   /*array*/
