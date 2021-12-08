@@ -1,4 +1,4 @@
-function dividir(x,y){
+/*function dividir(x,y){
     return x/y
 }
 
@@ -65,3 +65,24 @@ console.log(Facundo)
 console.log("Inversion" in Facundo)
 
 Facundo.habla();
+*/
+
+
+let NOmbre = ["Valeria","Vanina","Cristian","Eduardo"]   /*array*/
+
+for(let i = 0;i<4;i++){        
+    console.log(NOmbre[i]);
+}
+
+function saludando (NOmbre){   /*Array a funcion*/
+    console.log(`hola inversor ${NOmbre} como estas?`)
+}
+NOmbre.forEach(saludando);
+
+NOmbre.push("Daniel");
+console.log(NOmbre);
+
+NOmbre.unshift("lu"); /*agrega primero*/
+console.log(NOmbre);
+
+console.log(NOmbre.indexOf("vanina"));
