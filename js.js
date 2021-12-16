@@ -86,3 +86,33 @@ NOmbre.unshift("lu"); /*agrega primero*/
 console.log(NOmbre);
 
 console.log(NOmbre.indexOf("vanina"));
+
+localStorage.setItem("Vanina",200);
+localStorage.setItem("Lucia",243);
+
+
+/*sessionStorage.setItem("saludo", "Hola como estan");*/
+
+
+let VaninaInv = localStorage.getItem("Vanina");
+document.write(VaninaInv);
+
+/*document.cookie = "Name=Cookie; expires=Fri 01 Jan 00 00:00:00 GMT";*/ 
+
+console.log(document.getElementById("America"));
+console.log(document.getElementsByClassName("PaisesInversores"));
+console.log(document.getElementsByTagName("strong"));
+
+console.log(typeof nodoConUl);
+
+let listica = document.getElementsByTagName("li");
+
+console.log(listica, listica.length);
+
+for(let i = 0 ; listica.length; i++){
+    if(i%2 == 0){
+        listica[i].innerHTML = "Este Pais es inpar pero confidencial";
+    } else{
+        listica[i].innerHTML = "Este pais es par pero confidencial";
+    }
+}
