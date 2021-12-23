@@ -105,14 +105,22 @@ console.log(document.getElementsByTagName("strong"));
 
 console.log(typeof nodoConUl);
 
-let listica = document.getElementsByTagName("li");
+let listica = document.getElementsByClassName("Privacy Policy");
 
 console.log(listica, listica.length);
 
 for(let i = 0 ; listica.length; i++){
     if(i%2 == 0){
-        listica[i].innerHTML = "Este Pais es inpar pero confidencial";
-    } else{
-        listica[i].innerHTML = "Este pais es par pero confidencial";
-    }
+        listica[i].innerHTML = "El Inversor no quiere revelar su identidad.";
+    } 
 }
+
+let botonson = document.querySelector("#TOKEN");
+boton.onclick = () => {
+    alert("Tu nuevo Codigo TOKEN es: 01240234");
+};
+
+let botonCon = document.querySelector("#BotonContacto");
+boton.onclick = () => {
+    alert("Por Favor contactanos a 095686444");
+};
