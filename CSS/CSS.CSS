@@ -1,0 +1,17 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic underline solid black 1px;
+    font-size: 5rem;
+}
+.TituloUno{
+    font-size: 8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.TituloDos{
+    font-size: 5rem;
+    color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card-textBold{
+    font-weight: bold;
+}

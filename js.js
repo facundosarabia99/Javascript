@@ -5,6 +5,7 @@ function dividir(x,y){
 alert("Esta pagina web es solo para mayores de 18");
 
 let Nombre = prompt("Bienvenido a mi programa, dinos tu nombre");
+let Mail = prompt("Ahora dinos tu E-mail");
 
 
 let num = prompt(`Hola ${Nombre}, cual es tu edad?`);
@@ -43,6 +44,7 @@ let Cuota = (dividir(Inversion,Numcuotas));
 
 alert(`El costo de tu cuota sera de $${Cuota}, estas bien con eso ${Nombre}?`)
 
+/*
 class Cliente{
     constructor(Nombre,Edad,Ocupacion,Inversion) {
         this.Nombre=Nombre,
@@ -70,11 +72,12 @@ Facundo.habla();
 
 let NOmbre = ["Valeria","Vanina","Cristian","Eduardo"]   /*array*/
 
+/*
 for(let i = 0;i<4;i++){        
     console.log(NOmbre[i]);
 }
 
-function saludando (NOmbre){   /*Array a funcion*/
+function saludando (NOmbre){   /*Array a funcion*//*
     console.log(`hola inversor ${NOmbre} como estas?`)
 }
 NOmbre.forEach(saludando);
@@ -82,7 +85,7 @@ NOmbre.forEach(saludando);
 NOmbre.push("Daniel");
 console.log(NOmbre);
 
-NOmbre.unshift("lu"); /*agrega primero*/
+NOmbre.unshift("lu"); /*agrega primero*//*
 console.log(NOmbre);
 
 console.log(NOmbre.indexOf("vanina"));
@@ -93,12 +96,12 @@ localStorage.setItem("Lucia",243);
 
 /*sessionStorage.setItem("saludo", "Hola como estan");*/
 
-
+/*
 let VaninaInv = localStorage.getItem("Vanina");
 document.write(VaninaInv);
 
 /*document.cookie = "Name=Cookie; expires=Fri 01 Jan 00 00:00:00 GMT";*/ 
-
+/*
 console.log(document.getElementById("America"));
 console.log(document.getElementsByClassName("PaisesInversores"));
 console.log(document.getElementsByTagName("strong"));
@@ -124,3 +127,77 @@ let botonCon = document.querySelector("#BotonContacto");
 boton.onclick = () => {
     alert("Por Favor contactanos a 095686444");
 };
+*/
+let usuarios = [
+    {
+      id:1,
+      nombre: "Facundo Sarabia",
+      inversion: 1000,
+      estado: 2000,
+      imagen: "IMGS/USUARIO.JPG",
+    },
+    {
+      id:2,
+      nombre: "Andrea Pollero",
+      inversion: 201000,
+      estado: 2000000,
+      imagen: "IMGS/USUARIO.JPG",
+    },
+    {
+      id:3,
+      nombre: "Nestor Jaque",
+      inversion: 100,
+      estado: 2000,
+      imagen: "IMGS/USUARIO.JPG",
+    },
+    {
+      id:4,
+      nombre: "Francsico Rodriguez",
+      inversion: 10,
+      estado: 200,
+      imagen: "IMGS/USUARIO.JPG",
+    },
+    {
+      id:5,
+      nombre: "Andres Rodriguez",
+      inversion: 10,
+      estado: 2000,
+      imagen: "IMGS/USUARIO.JPG",
+    },
+    {
+      id:6,
+      nombre: "Nacho Salgado",
+      inversion: 100,
+      estado: 2000,
+      imagen: "IMGS/USUARIO.JPG",
+    },
+  ];
+  
+  const contenedor = document.getElementById("container");
+  
+  usuarios.forEach((usuarios)=>{
+    let card = document.createElement("div");
+    card.classList.add("card", "col-sm-12", "col-lg-3");
+    card.innerHTML = `<img src="${usuarios.imagen}" class="card-img-top" alt="imagen-producto">
+    <div class="card-body">
+      <h5 class="card-title">${usuarios.nombre}</h5>
+      <p class="card-text">Inversion Inicial: ${usuarios.inversion}</p>
+      <p class="card-textBold">Estado: ${usuarios.estado}</p>
+      <a href="#" class="btn btn-primary" onClick = "compra()"
+      >Comprar</a>
+    </div>`;
+    contenedor.appendChild(card);
+  });
+  
+  
+  function compra() {
+    alert("Los datos del inversor que solicito fueron enviados a su correo.");
+  }
+   
+  function DatosEnviados(){
+    alert("Aun no hay datos de estos paises");
+  }
+  
+  
+
+
