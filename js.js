@@ -202,7 +202,7 @@ let usuarios = [
   }
   
   
-  $(document).ready(function(){
+  $(document).ready(function(){  /* para ejecutarse primero*/
     console.log("Estas listo para invertir")
   });
 
