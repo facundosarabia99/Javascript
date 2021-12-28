@@ -128,6 +128,9 @@ boton.onclick = () => {
     alert("Por Favor contactanos a 095686444");
 };
 */
+
+
+
 let usuarios = [
     {
       id:1,
@@ -199,5 +202,7 @@ let usuarios = [
   }
   
   
-
+  $(document).ready(function(){
+    console.log("Estas listo para invertir")
+  });
 
