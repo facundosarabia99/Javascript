@@ -201,8 +201,12 @@ let usuarios = [
     alert("Aun no hay datos de estos paises");
   }
   
-  
-  $(document).ready(function(){  /* para ejecutarse primero*/
-    console.log("Estas listo para invertir")
-  });
 
+  $( document ).ready(function() /* para ejecutarse primero*/
+  {
+     console.log( "Estas listo para invertir" );
+  });
+  
+  window.addEventListener('load', function() {
+    console.log( "Se cargo todo correctamente." );
+  });
