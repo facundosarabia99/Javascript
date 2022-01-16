@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "nombre": "Facundo Sarabia",
+        "inversion": 1000,
+        "estado": 2000
+      },
+      {
+        "id":2,
+        "nombre": "Nestor Sarabia",
+        "inversion": 15000,
+        "estado": 200000
+      },
+      {
+        "id":3,
+        "nombre": "Martin Gomez",
+        "inversion": 100,
+        "estado": 200
+      },
+      {
+        "id":4,
+        "nombre": "Mateo Bandiralli",
+        "inversion": 1000,
+        "estado": 2000
+      }
+]
+
+
+

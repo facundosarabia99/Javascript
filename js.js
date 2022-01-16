@@ -1,3 +1,5 @@
+const { json } = require("stream/consumers");
+
 function dividir(x,y){
     return x/y
 }
@@ -210,3 +212,92 @@ let usuarios = [
   window.addEventListener('load', function() {
     console.log( "Se cargo todo correctamente." );
   });
+
+  const URLJSON = "data/datos.json"
+//Agregamos un botón con jQuery
+$("body").prepend('<button id="btn1">JSON</button>');
+//Escuchamos el evento click del botón agregado
+$("#btn1").click(() => { 
+$.getJSON(URLJSON, function (respuesta, estado) {
+    if(estado === "success"){
+      let misDatos = respuesta;
+      for (const dato of misDatos) {
+        $("body").prepend(`<div>
+                                <h3>${dato.nombre}</h3>
+                                <p> ${dato.estado}</p>
+                            </div>`)
+      }  
+    }
+    });
+});
+
+
+
+
+const URLJSON = "data/datos.json";
+$("body").prepend('<button id="btn2">JSON</button>');
+
+$("#btn1").click(() => { 
+$.getJSON(URLJSON, function (respuesta, estado) {
+    if(estado === "success"){
+      let misDatos = respuesta;
+      for (const dato of misDatos) {
+        $("body").prepend(`<div>
+                                <h3>${dato.inversion}</h3>
+                                <p> ${dato.id}</p>
+                            </div>`)
+      }  
+    }
+    });
+});
+
+
+
+/*let productos = [];
+$.ajax({
+  url: "./data.json",
+  dataType: "json",
+  success: (respuesta) => {
+    cargarProductos(respuesta);
+  },
+});
+
+const cargarProductos = (respuesta) => {
+  productos = respuesta;
+
+  const contenedor = document.getElementById("container");
+  contenedor.innerHTML = "";
+}
+
+productos.forEach((producto, indice) => {
+  let card = document.create Element("div");
+  card.classList.add("")
+})
+
+
+
+
+
+/*
+function cargarJSON() {
+    let llamada = new XMLHttpRequest();
+  
+    let url = "datos.json";
+  
+    llamada.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200){
+  
+        console.log("recibida la informacion de los nuevos usuarios");
+        let datos = JSON.parse(this.responseText);
+        console.log(datos);
+      }
+    }
+  
+    console.log("Peticion enviada");
+  
+    llamada.open("GET", url, true);
+    llamada.send();
+  
+  }
+  
+  window.onload = cargarJSON; */
