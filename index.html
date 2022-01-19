@@ -27,7 +27,7 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  <a class="nav-link" href="#">EEUU</a>
+                  <a class="nav-link" onclick="DatosEnviados()"  href="#" tabindex="-1">EEUU</a>
                   <a class="nav-link" onclick="DatosEnviados()" href="#">Argentina</a>
                   <a class="nav-link" onclick="DatosEnviados()"  href="#" tabindex="-1">Uruguay</a>
                 </div>
@@ -36,6 +36,69 @@
           </nav>
     </header>
     <main>
+      <main class="conta">
+        <h1 class="contact">Formulario Contacto</h1>
+        <form>
+            <fieldset>
+                <div>
+                    <label for= "Nombre" > Completa tu nombre </label>
+                    <input type="text" name="Nombre" placeholder="Nombre" id="Nombre">
+                        <br><br>
+                        <label for= "apellido" id="Apellido"> Escribe tu apellido</label>
+                        <input type="text" name="apellido" placeholder= "Apellido" id="Apellido">
+                        <br><br> 
+                <div>
+                <br>
+                </div>
+                    <label for= "email"> Escribe tu email * </label>
+                    <input type= "email" name= "email" required id="Email">
+                    <br><br>
+                <div>
+                <br>
+                </div>
+                <label for= "Pais">Pais:</label>
+                    <Select name= "Pais" id="Pais">
+                        <option value="argentina">argentina</option>
+                        <option value="uruguay">uruguay</option>
+                        <option value="brasil">brasil</option>
+                    </Select>
+                <div>
+                <br>
+                </div>
+                    <label for="Sexo">Genero</label>
+                    <input type="radio" name="sexo" value="mujer" id="Sexo"> mujer
+                    <input type="radio" name="sexo" value="hombre" id="Sexo"> hombre
+                <div>
+                <br>
+                </div>
+                    <label for="password"> Password </label>
+                    <input type= "password" id="Password">
+                <div>
+                <br>
+                <div>
+                    <label for= "nac">Fecha de nacimiento</label>
+                    <input type= "date" name="nac" id="Nacimiento">
+                </div>
+                <br>
+                <div>
+                    <label for= "comentario" name= "comentario"> Deja tu momentario
+                        </label><br>
+                        <textarea name= "comentario" cols="50" rows="10" id="Comentario"></textarea>
+                </div>
+                <div>
+                    <input type= "submit" value="enviar datos" id="btnSubmit">
+                    <input type= "reset" value="borrar datos" id="BorrarDatos">
+                </div>
+                <div>
+
+                </div>
+
+
+
+                    </lable>
+                </div>
+        </form>
+    </main>
       <H1>INVERSIONES WEB</H1>
         <h2 class=".TituloUno">Inversores ejemplares</h2>
         <h3 class=".TituloDos">Plataforma online para invertir como los que saben</h3>

@@ -1,4 +1,24 @@
-const { json } = require("stream/consumers");
+$(document).ready(function(){
+
+  $('#btnSubmit').click(function(){
+    let name = $('#Nombre').val();
+    let apellido = $('#Apellido').val();
+    let email = $('#Email').val();
+    let pais = $('#Pais').val();
+    let sexo = $('#Sexo').val();
+    let password = $('#Password').val();
+    let nacimiento = $('#Nacimiento').val();
+    let comentario = $('#Comentario').val(); 
+    localStorage.setItem("name",name);
+    localStorage.setItem("apellido",apellido);
+    localStorage.setItem("email",email);
+    localStorage.setItem("pais",pais);
+    localStorage.setItem("sexo",sexo);
+    localStorage.setItem("password",password);
+    localStorage.setItem("comentario",comentario);
+  })
+
+})
 
 function dividir(x,y){
     return x/y
@@ -213,9 +233,8 @@ let usuarios = [
     console.log( "Se cargo todo correctamente." );
   });
 
-  const URLJSON = "data/datos.json"
+  const URLJSON = "./datos.json"
 //Agregamos un botón con jQuery
-$("body").prepend('<button id="btn1">JSON</button>');
 //Escuchamos el evento click del botón agregado
 $("#btn1").click(() => { 
 $.getJSON(URLJSON, function (respuesta, estado) {
@@ -234,10 +253,9 @@ $.getJSON(URLJSON, function (respuesta, estado) {
 
 
 
-const URLJSON = "data/datos.json";
-$("body").prepend('<button id="btn2">JSON</button>');
+// const URLJSON = "data/datos.json";
 
-$("#btn1").click(() => { 
+$("#btn2").click(() => { 
 $.getJSON(URLJSON, function (respuesta, estado) {
     if(estado === "success"){
       let misDatos = respuesta;

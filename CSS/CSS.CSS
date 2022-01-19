@@ -14,4 +14,300 @@ h1{
 }
 .card-textBold{
     font-weight: bold;
-}`
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  header {
+    background-color: black;
+    height: 7rem;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    padding: 1rem;
+    background-color: black;
+  }
+  
+  header .Logo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  
+  header .Logo .logohijo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0.5rem;
+  }
+  
+  header .Logo .logohijo img {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 5rem;
+  }
+  
+  header .Menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  header .Menu p {
+    color: white;
+    margin: 0.1rem;
+    margin-right: 1.5rem;
+  }
+  
+  header .Menu p:hover {
+    -webkit-text-decoration: underline solid white 2px;
+            text-decoration: underline solid white 2px;
+  }
+  
+  @media (max-width: 767px) {
+    header .Menu {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+    }
+  }
+  
+  .homee {
+    margin: 10rem;
+  }
+  
+  .conta {
+    border: black solid 1px;
+    padding: 1rem;
+    margin: 7rem;
+  }
+  
+  .conta h1 {
+    height: 5rem;
+  }
+  
+  .galerias {
+    margin: 1rem;
+    margin-top: 6rem;
+    background: #e4e3e3;
+    font-family: Arial, Helvetica, sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: black solid 1px;
+    padding: 2rem;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  
+  .galerias section {
+    margin: black solid 1px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .galerias section h1 {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .galerias section p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+  }
+  
+  .galerias img {
+    width: 250px;
+    border: 2px double white;
+    margin: 1rem;
+  }
+  
+  .galerias img:hover {
+    border: solid 4px black;
+  }
+  
+  main div .row p {
+    line-height: 10px;
+    color: white;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: 10px;
+    text-align: center;
+    word-spacing: 5px;
+  }
+  
+  main div .row p .black {
+    color: black;
+  }
+  
+  main div .row .scale {
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  
+  main div .row .scale:hover {
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+  }
+  
+  main div .row h5 .black {
+    color: black;
+  }
+  
+  @media screen and (max-width: 600px) {
+    main div .row h2 h2 a {
+      text-align: center;
+    }
+  }
+  
+  main .caja {
+    background-color: #f8f8f8;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: solid 1px black;
+    text-align: justify;
+    padding: 15px;
+    margin: 2px;
+  }
+  
+  main .contacto {
+    background-color: black;
+  }
+  
+  .parrafo {
+    position: relative;
+    margin: 5;
+  }
+  
+  @media (max-width: 767px) {
+    .homee {
+      margin: 2rem;
+    }
+    .row {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    p {
+      font-size: 10px;
+    }
+    .container {
+      margin: 1rem;
+    }
+    .container img {
+      width: 7rem;
+    }
+  }
+  
+  footer {
+    bottom: 0px;
+    width: 100%;
+    padding: 1rem;
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  
+  footer nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  
+  footer nav .redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0.5rem;
+  }
+  
+  footer nav .redes img {
+    width: 2rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  footer nav .copyright {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  
+  footer nav .copyright p {
+    color: white;
+    margin: 0.1rem;
+    margin-right: 1.5rem;
+  }
+  /*# sourceMappingURL=estilos.css.map */
